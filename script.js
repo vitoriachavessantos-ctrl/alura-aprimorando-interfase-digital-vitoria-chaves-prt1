@@ -1,17 +1,14 @@
 const botoes = document.querySelectorAll(".botoes button");
 
-
 botoes.forEach(function (botao) {
 
     let curtiu = false;
-
 
     botao.addEventListener("click", function () {
 
         const numeroSpan = botao.querySelector("span");
 
         const quantidadeAtual = Number(numeroSpan.textContent);
-
 
         if (curtiu === false) {
 
